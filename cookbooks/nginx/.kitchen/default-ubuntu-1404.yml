@@ -1,0 +1,12 @@
+---
+uuid: ac06a343a3eda5ef
+server_id: vmac06a343a3eda5ef
+azure_resource_group_name: kitchen-default-ubuntu-1404-20180109T210117
+subscription_id: 1270a218-620b-4c61-8864-8e4bb50c213e
+username: azure
+vm_name: ubuntu-vm
+azure_environment: Azure
+use_managed_disks: true
+last_error: Errno::EACCES
+hostname: 13.84.133.37
+last_action: create

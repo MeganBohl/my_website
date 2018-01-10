@@ -1,0 +1,35 @@
+--- 
+driver:
+  name: azurerm
+
+driver_config:
+  subscription_id: 1270a218-620b-4c61-8864-8e4bb50c213e
+  location: 'South Central US'
+  machine_size: 'Standard_B1s' 
+
+transport:
+  ssh_key: /home/mbohl/.ssh/id_rsa 
+
+provisioner:
+  name: chef_zero 
+
+verifier:
+  name: inspec 
+
+platforms:
+  - name: ubuntu-14.04
+    driver_config:
+      image_urn: Canonical:UbuntuServer:14.04.5-LTS:latest
+      vm_name: ubuntu-vm
+      vm_tags:
+        ostype: linux
+        distro: ubuntu 
+
+suites:
+  - name: default
+    run_list:
+      - recipe[nginx::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
