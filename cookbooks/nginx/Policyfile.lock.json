@@ -1,0 +1,48 @@
+{
+  "revision_id": "ce40507db0574a938bac463ae46803b3bcefa52bc768c3b298ed2799184be4d6",
+  "name": "nginx",
+  "run_list": [
+    "recipe[nginx::default]"
+  ],
+  "cookbook_locks": {
+    "nginx": {
+      "version": "0.1.0",
+      "identifier": "0b90041349fd224e662e15839f2c354750710867",
+      "dotted_decimal_identifier": "3254571921702178.22067396298907436.58580408535143",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/MeganBohl/my_website.git",
+        "revision": "47eda40aebc3c05152eb441dd87330b921e74c49",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/feature_nginx"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "nginx",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "nginx (0.1.0)": [
+
+      ]
+    }
+  }
+}

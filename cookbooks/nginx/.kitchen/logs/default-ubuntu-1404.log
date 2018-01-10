@@ -1,124 +1,5 @@
-I, [2018-01-10T01:21:11.978037 #4690]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
-I, [2018-01-10T01:21:11.979246 #4690]  INFO -- default-ubuntu-1404: Preparing files for transfer
-I, [2018-01-10T01:21:11.979512 #4690]  INFO -- default-ubuntu-1404: Preparing dna.json
-I, [2018-01-10T01:21:11.979898 #4690]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 6.2.0...
-I, [2018-01-10T01:21:12.049936 #4690]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
-I, [2018-01-10T01:21:12.052148 #4690]  INFO -- default-ubuntu-1404: Preparing nodes
-I, [2018-01-10T01:21:12.052624 #4690]  INFO -- default-ubuntu-1404: Preparing validation.pem
-I, [2018-01-10T01:21:12.057069 #4690]  INFO -- default-ubuntu-1404: Preparing client.rb
-I, [2018-01-10T01:21:40.120428 #4690]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
-I, [2018-01-10T01:21:40.120834 #4690]  INFO -- default-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
-I, [2018-01-10T01:21:40.121130 #4690]  INFO -- default-ubuntu-1404: Trying wget...
-I, [2018-01-10T01:21:41.010868 #4690]  INFO -- default-ubuntu-1404: Download complete.
-I, [2018-01-10T01:21:41.024247 #4690]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
-I, [2018-01-10T01:21:41.024677 #4690]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
-I, [2018-01-10T01:21:41.026525 #4690]  INFO -- default-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
-I, [2018-01-10T01:21:41.026869 #4690]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1886/metadata.txt
-I, [2018-01-10T01:21:41.027175 #4690]  INFO -- default-ubuntu-1404: trying wget...
-I, [2018-01-10T01:21:41.534461 #4690]  INFO -- default-ubuntu-1404: sha1	968d6f567dc45ab4cd8d8f94a5e43d781a1d5ba1
-I, [2018-01-10T01:21:41.534873 #4690]  INFO -- default-ubuntu-1404: sha256	c523feb2494b407d71c56261035a58b6897ec6312f917477ef0b3fc4e27c072d
-I, [2018-01-10T01:21:41.535240 #4690]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/13.6.4/ubuntu/14.04/chef_13.6.4-1_amd64.deb
-I, [2018-01-10T01:21:41.535718 #4690]  INFO -- default-ubuntu-1404: version	13.6.4
-I, [2018-01-10T01:21:41.535994 #4690]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
-I, [2018-01-10T01:21:41.540910 #4690]  INFO -- default-ubuntu-1404: downloading https://packages.chef.io/files/stable/chef/13.6.4/ubuntu/14.04/chef_13.6.4-1_amd64.deb
-I, [2018-01-10T01:21:41.541217 #4690]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1886/chef_13.6.4-1_amd64.deb
-I, [2018-01-10T01:21:41.541537 #4690]  INFO -- default-ubuntu-1404: trying wget...
-I, [2018-01-10T01:21:42.775301 #4690]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
-I, [2018-01-10T01:21:43.125608 #4690]  INFO -- default-ubuntu-1404: 
-I, [2018-01-10T01:21:43.126109 #4690]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2018-01-10T01:21:43.126356 #4690]  INFO -- default-ubuntu-1404: 
-I, [2018-01-10T01:21:43.126654 #4690]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
-I, [2018-01-10T01:21:43.126939 #4690]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
-I, [2018-01-10T01:21:43.127231 #4690]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
-I, [2018-01-10T01:21:43.127527 #4690]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
-I, [2018-01-10T01:21:43.127790 #4690]  INFO -- default-ubuntu-1404: CI/CD environments.
-I, [2018-01-10T01:21:43.127985 #4690]  INFO -- default-ubuntu-1404: 
-I, [2018-01-10T01:21:43.128239 #4690]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2018-01-10T01:21:43.128444 #4690]  INFO -- default-ubuntu-1404: 
-I, [2018-01-10T01:21:43.128736 #4690]  INFO -- default-ubuntu-1404: Installing chef 
-I, [2018-01-10T01:21:43.128973 #4690]  INFO -- default-ubuntu-1404: installing with dpkg...
-I, [2018-01-10T01:21:44.226948 #4690]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
-I, [2018-01-10T01:21:46.471062 #4690]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28865 files and directories currently installed.)
-I, [2018-01-10T01:21:46.472011 #4690]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_13.6.4-1_amd64.deb ...
-I, [2018-01-10T01:21:46.658595 #4690]  INFO -- default-ubuntu-1404: Unpacking chef (13.6.4-1) ...
-I, [2018-01-10T01:23:54.196752 #4690]  INFO -- default-ubuntu-1404: Setting up chef (13.6.4-1) ...
-I, [2018-01-10T01:23:54.297641 #4690]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
-I, [2018-01-10T01:23:56.154111 #4690]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
-I, [2018-01-10T01:23:57.828856 #4690]  INFO -- default-ubuntu-1404: Starting Chef Client, version 13.6.4
-I, [2018-01-10T01:23:59.321735 #4690]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
-I, [2018-01-10T01:23:59.574968 #4690]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["nginx::default"]
-I, [2018-01-10T01:23:59.593008 #4690]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
-I, [2018-01-10T01:23:59.596758 #4690]  INFO -- default-ubuntu-1404:   - nginx (0.1.0)
-I, [2018-01-10T01:23:59.597030 #4690]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
-I, [2018-01-10T01:23:59.598187 #4690]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
-I, [2018-01-10T01:23:59.601628 #4690]  INFO -- default-ubuntu-1404: Converging 4 resources
-I, [2018-01-10T01:23:59.601928 #4690]  INFO -- default-ubuntu-1404: Recipe: nginx::default
-I, [2018-01-10T01:23:59.603689 #4690]  INFO -- default-ubuntu-1404:   * apt_update[Update the apt cache daily] action periodic
-I, [2018-01-10T01:23:59.604175 #4690]  INFO -- default-ubuntu-1404:     - update new lists of packages
-I, [2018-01-10T01:23:59.606190 #4690]  INFO -- default-ubuntu-1404:     * directory[/var/lib/apt/periodic] action create (up to date)
-I, [2018-01-10T01:23:59.607232 #4690]  INFO -- default-ubuntu-1404:     * directory[/etc/apt/apt.conf.d] action create (up to date)
-I, [2018-01-10T01:23:59.609395 #4690]  INFO -- default-ubuntu-1404:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
-I, [2018-01-10T01:25:00.993016 #4690]  INFO -- default-ubuntu-1404:     * execute[apt-get -q update] action run
-I, [2018-01-10T01:25:00.993421 #4690]  INFO -- default-ubuntu-1404:       - execute apt-get -q update
-I, [2018-01-10T01:25:00.993655 #4690]  INFO -- default-ubuntu-1404:   
-I, [2018-01-10T01:25:34.562821 #4690]  INFO -- default-ubuntu-1404:   * apt_package[nginx] action install
-I, [2018-01-10T01:25:34.563393 #4690]  INFO -- default-ubuntu-1404:     - install version 1.4.6-1ubuntu3.8 of package nginx
-I, [2018-01-10T01:25:34.627883 #4690]  INFO -- default-ubuntu-1404:   * service[nginx] action enable (up to date)
-I, [2018-01-10T01:25:34.691736 #4690]  INFO -- default-ubuntu-1404:   * service[nginx] action start (up to date)
-I, [2018-01-10T01:25:34.695161 #4690]  INFO -- default-ubuntu-1404:   * template[/usr/share/nginx/html/index.html] action create
-I, [2018-01-10T01:25:34.695839 #4690]  INFO -- default-ubuntu-1404:     - update content in file /usr/share/nginx/html/index.html from 38ffd4 to d300c3
-I, [2018-01-10T01:25:34.696386 #4690]  INFO -- default-ubuntu-1404:     --- /usr/share/nginx/html/index.html	2014-03-04 11:46:45.000000000 +0000
-I, [2018-01-10T01:25:34.696949 #4690]  INFO -- default-ubuntu-1404:     +++ /usr/share/nginx/html/.chef-index20180110-2092-1shv6ih.html	2018-01-10 01:25:34.649907971 +0000
-I, [2018-01-10T01:25:34.697373 #4690]  INFO -- default-ubuntu-1404:     @@ -1,26 +1,25 @@
-I, [2018-01-10T01:25:34.697721 #4690]  INFO -- default-ubuntu-1404:     -<!DOCTYPE html>
-I, [2018-01-10T01:25:34.698125 #4690]  INFO -- default-ubuntu-1404:     -<html>
-I, [2018-01-10T01:25:34.698490 #4690]  INFO -- default-ubuntu-1404:     -<head>
-I, [2018-01-10T01:25:34.698876 #4690]  INFO -- default-ubuntu-1404:     -<title>Welcome to nginx!</title>
-I, [2018-01-10T01:25:34.699207 #4690]  INFO -- default-ubuntu-1404:     -<style>
-I, [2018-01-10T01:25:34.699524 #4690]  INFO -- default-ubuntu-1404:     -    body {
-I, [2018-01-10T01:25:34.699826 #4690]  INFO -- default-ubuntu-1404:     -        width: 35em;
-I, [2018-01-10T01:25:34.700151 #4690]  INFO -- default-ubuntu-1404:     -        margin: 0 auto;
-I, [2018-01-10T01:25:34.700473 #4690]  INFO -- default-ubuntu-1404:     -        font-family: Tahoma, Verdana, Arial, sans-serif;
-I, [2018-01-10T01:25:34.700799 #4690]  INFO -- default-ubuntu-1404:     -    }
-I, [2018-01-10T01:25:34.701085 #4690]  INFO -- default-ubuntu-1404:     -</style>
-I, [2018-01-10T01:25:34.701397 #4690]  INFO -- default-ubuntu-1404:     -</head>
-I, [2018-01-10T01:25:34.701718 #4690]  INFO -- default-ubuntu-1404:     -<body>
-I, [2018-01-10T01:25:34.702107 #4690]  INFO -- default-ubuntu-1404:     -<h1>Welcome to nginx!</h1>
-I, [2018-01-10T01:25:34.702518 #4690]  INFO -- default-ubuntu-1404:     -<p>If you see this page, the nginx web server is successfully installed and
-I, [2018-01-10T01:25:34.702837 #4690]  INFO -- default-ubuntu-1404:     -working. Further configuration is required.</p>
-I, [2018-01-10T01:25:34.703163 #4690]  INFO -- default-ubuntu-1404:     +apt_update 'Update the apt cache daily' do
-I, [2018-01-10T01:25:34.703487 #4690]  INFO -- default-ubuntu-1404:     +  frequency 86_400
-I, [2018-01-10T01:25:34.703822 #4690]  INFO -- default-ubuntu-1404:     +  action :periodic
-I, [2018-01-10T01:25:34.704130 #4690]  INFO -- default-ubuntu-1404:     + end
-I, [2018-01-10T01:25:34.704448 #4690]  INFO -- default-ubuntu-1404:      
-I, [2018-01-10T01:25:34.704768 #4690]  INFO -- default-ubuntu-1404:     -<p>For online documentation and support please refer to
-I, [2018-01-10T01:25:34.705072 #4690]  INFO -- default-ubuntu-1404:     -<a href="http://nginx.org/">nginx.org</a>.<br/>
-I, [2018-01-10T01:25:34.705412 #4690]  INFO -- default-ubuntu-1404:     -Commercial support is available at
-I, [2018-01-10T01:25:34.705730 #4690]  INFO -- default-ubuntu-1404:     -<a href="http://nginx.com/">nginx.com</a>.</p>
-I, [2018-01-10T01:25:34.706021 #4690]  INFO -- default-ubuntu-1404:     +package 'nginx'
-I, [2018-01-10T01:25:34.706386 #4690]  INFO -- default-ubuntu-1404:      
-I, [2018-01-10T01:25:34.707020 #4690]  INFO -- default-ubuntu-1404:     -<p><em>Thank you for using nginx.</em></p>
-I, [2018-01-10T01:25:34.707321 #4690]  INFO -- default-ubuntu-1404:     -</body>
-I, [2018-01-10T01:25:34.707644 #4690]  INFO -- default-ubuntu-1404:     -</html>
-I, [2018-01-10T01:25:34.707973 #4690]  INFO -- default-ubuntu-1404:     +service 'nginx' do
-I, [2018-01-10T01:25:34.708289 #4690]  INFO -- default-ubuntu-1404:     +  supports status: true
-I, [2018-01-10T01:25:34.708599 #4690]  INFO -- default-ubuntu-1404:     +  action [:enable, :start]
-I, [2018-01-10T01:25:34.708915 #4690]  INFO -- default-ubuntu-1404:     +end
-I, [2018-01-10T01:25:34.709201 #4690]  INFO -- default-ubuntu-1404:     +
-I, [2018-01-10T01:25:34.709531 #4690]  INFO -- default-ubuntu-1404:     +file '/usr/share/nginx/html/index.html' do
-I, [2018-01-10T01:25:34.709828 #4690]  INFO -- default-ubuntu-1404:     +  content '<html>
-I, [2018-01-10T01:25:34.710154 #4690]  INFO -- default-ubuntu-1404:     +  <body>
-I, [2018-01-10T01:25:34.711547 #4690]  INFO -- default-ubuntu-1404:     +    <h1>Hello, Michael!</h1>
-I, [2018-01-10T01:25:34.711859 #4690]  INFO -- default-ubuntu-1404:     +    
-I, [2018-01-10T01:25:34.712200 #4690]  INFO -- default-ubuntu-1404:     +        <p><img style="display: block; margin-left: auto; margin-right: auto;" title="CO" src="https://sd.keepcalm-o-matic.co.uk/i-w600/i-can-t-keep-calm-i-m-moving-to-colorado.jpg" 
-I, [2018-01-10T01:25:34.712656 #4690]  INFO -- default-ubuntu-1404:     +	alt="CO" width="150" height="250"></p>
-I, [2018-01-10T01:25:34.712972 #4690]  INFO -- default-ubuntu-1404:     +        
-I, [2018-01-10T01:25:34.713275 #4690]  INFO -- default-ubuntu-1404:     +  </body>
-I, [2018-01-10T01:25:34.713593 #4690]  INFO -- default-ubuntu-1404:     + </html>'
-I, [2018-01-10T01:25:34.713902 #4690]  INFO -- default-ubuntu-1404:     +end
-I, [2018-01-10T01:25:34.714603 #4690]  INFO -- default-ubuntu-1404:     +
-I, [2018-01-10T01:25:34.748019 #4690]  INFO -- default-ubuntu-1404: 
-I, [2018-01-10T01:25:34.748553 #4690]  INFO -- default-ubuntu-1404: Running handlers:
-I, [2018-01-10T01:25:34.748823 #4690]  INFO -- default-ubuntu-1404: Running handlers complete
-I, [2018-01-10T01:25:34.749088 #4690]  INFO -- default-ubuntu-1404: Chef Client finished, 4/9 resources updated in 01 minutes 37 seconds
-I, [2018-01-10T01:25:34.774580 #4690]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (4m22.79s).
+I, [2018-01-10T01:38:19.280440 #5594]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2018-01-10T01:38:19.281887 #5594]  INFO -- default-ubuntu-1404: Azure environment: Azure
+I, [2018-01-10T01:38:19.315093 #5594]  INFO -- default-ubuntu-1404: Destroying Resource Group: kitchen-default-ubuntu-1404-20180110T011745
+I, [2018-01-10T01:38:19.897396 #5594]  INFO -- default-ubuntu-1404: Destroy operation accepted and will continue in the background.
+I, [2018-01-10T01:38:19.898734 #5594]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.62s).
