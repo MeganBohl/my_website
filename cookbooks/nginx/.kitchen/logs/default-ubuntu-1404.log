@@ -1,5 +1,24 @@
-I, [2018-01-10T01:38:19.280440 #5594]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
-I, [2018-01-10T01:38:19.281887 #5594]  INFO -- default-ubuntu-1404: Azure environment: Azure
-I, [2018-01-10T01:38:19.315093 #5594]  INFO -- default-ubuntu-1404: Destroying Resource Group: kitchen-default-ubuntu-1404-20180110T011745
-I, [2018-01-10T01:38:19.897396 #5594]  INFO -- default-ubuntu-1404: Destroy operation accepted and will continue in the background.
-I, [2018-01-10T01:38:19.898734 #5594]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.62s).
+I, [2018-01-10T19:26:35.645649 #62194]  INFO -- default-ubuntu-1404: apt_update 'Update the apt cache daily' do
+I, [2018-01-10T19:26:35.645770 #62194]  INFO -- default-ubuntu-1404:   frequency 86_400
+I, [2018-01-10T19:26:35.645828 #62194]  INFO -- default-ubuntu-1404:   action :periodic
+I, [2018-01-10T19:26:35.645864 #62194]  INFO -- default-ubuntu-1404: end
+I, [2018-01-10T19:26:35.645893 #62194]  INFO -- default-ubuntu-1404: 
+I, [2018-01-10T19:26:35.645927 #62194]  INFO -- default-ubuntu-1404: package 'nginx'
+I, [2018-01-10T19:26:35.645955 #62194]  INFO -- default-ubuntu-1404: 
+I, [2018-01-10T19:26:35.645983 #62194]  INFO -- default-ubuntu-1404: service 'nginx' do
+I, [2018-01-10T19:26:35.646011 #62194]  INFO -- default-ubuntu-1404:   supports status: true
+I, [2018-01-10T19:26:35.646039 #62194]  INFO -- default-ubuntu-1404:   action [:enable, :start]
+I, [2018-01-10T19:26:35.646094 #62194]  INFO -- default-ubuntu-1404: end
+I, [2018-01-10T19:26:35.646125 #62194]  INFO -- default-ubuntu-1404: 
+I, [2018-01-10T19:26:35.646153 #62194]  INFO -- default-ubuntu-1404: file '/usr/share/nginx/html/index.html' do
+I, [2018-01-10T19:26:35.646180 #62194]  INFO -- default-ubuntu-1404:   content '<html>
+I, [2018-01-10T19:26:35.646207 #62194]  INFO -- default-ubuntu-1404:   <body>
+I, [2018-01-10T19:26:35.646238 #62194]  INFO -- default-ubuntu-1404:     <h1>Hello, Michael!</h1>
+I, [2018-01-10T19:26:35.646267 #62194]  INFO -- default-ubuntu-1404:     
+I, [2018-01-10T19:26:35.646311 #62194]  INFO -- default-ubuntu-1404:  <p><img style="display: block; margin-left: auto; margin-right: auto;" title="CO" src="https://sd.keepcalm-o-matic.co.uk/i-w600/i-can-t-keep-calm-i-m-moving-to-colorado.jpg" 
+I, [2018-01-10T19:26:35.646342 #62194]  INFO -- default-ubuntu-1404: 	alt="CO" width="150" height="250"></p>
+I, [2018-01-10T19:26:35.646410 #62194]  INFO -- default-ubuntu-1404:  
+I, [2018-01-10T19:26:35.646483 #62194]  INFO -- default-ubuntu-1404:   </body>
+I, [2018-01-10T19:26:35.646527 #62194]  INFO -- default-ubuntu-1404:  </html>'
+I, [2018-01-10T19:26:35.646557 #62194]  INFO -- default-ubuntu-1404: end
+I, [2018-01-10T19:26:35.646585 #62194]  INFO -- default-ubuntu-1404: 

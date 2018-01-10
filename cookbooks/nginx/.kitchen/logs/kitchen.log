@@ -1,3 +1,1 @@
-I, [2018-01-10T01:38:17.114342 #5594]  INFO -- Kitchen: -----> Starting Kitchen (v1.16.0)
-I, [2018-01-10T01:38:19.280352 #5594]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
-I, [2018-01-10T01:38:19.899107 #5594]  INFO -- Kitchen: -----> Kitchen is finished. (0m2.78s)
+I, [2018-01-10T19:26:35.203617 #62194]  INFO -- Kitchen: -----> Execute command on default-ubuntu-1404.
